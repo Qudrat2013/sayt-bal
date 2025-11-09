@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabic Muallim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <h1>Arabic Muallim</h1>
+                    <p>Arab tili kurslari - Professional o'qitish</p>
+                </div>
+                <div class="header-contacts">
+                    <div class="contact-item">
+                        <span>📞</span>
+                        <a href="tel:+998 97 777 49 12">+998 97 777 49 12</a>
+                    </div>
+                    <div class="contact-item">
+                        <span>✉️</span>
+                        <a href="abdulloharabic@gmail.com">abdulloharabic@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Bosh sahifa</a></li>
+                    <li><a href="#about" class="nav-link">Kurs haqida</a></li>
+                    <li><a href="#courses" class="nav-link">Kurs darajalari</a></li>
+                    <li><a href="#teachers" class="nav-link">O'qituvchilar</a></li>
+                    <li><a href="#results" class="nav-link">Natijalar</a></li>
+                    <li><a href="#contact" class="nav-link">Aloqa</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Arab Tili Kurslariga Xush Kelibsiz!</h1>
+                <p>Biz bilan arab tilini 6 oy ichida o'rganing. Tajribali o'qituvchilar, zamonaviy o'quv dasturlari va ishonchli natijalar</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="showCourseModal()">Kursga yozilish</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('about')">Batafsil ma'lumot</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/rasm.jpg" alt="Arab tili kurslari">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Kurs Haqida</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Nima uchun aynan bizning arab tili kursimiz?</h3>
+                    <p>Arabic Muallim arab tilini o'rganish - bu nafaqat grammatika va lug'at, balki madaniyat va an'analarni ham o'rganishdir. Bizning kursimizda:</p>
+                    <ul>
+                        <li>✅ Arab tilida erkin gaplashish
+                        <li>✅ Arab madaniyatini tushunish</li>
+                        <li>✅ Ishlash va o'qish imkoniyatlari</li>
+                        <li>✅ Xalqaro sertifikat olish</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-text">Muvaffaqiyatli o'quvchi</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-text">Arab o'qituvchilari</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-text">Yillik tajriba</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-text">Muvaffaqiyat darajasi</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2 class="section-title">Arab Tili Kurs Darajalari</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-icon">🔤</div>
+                    <h3>Boshlang'ich Daraja</h3>
+                    <p>Alifbo, asosiy grammatika, kundalik so'zlar. Arab tiliga kirish</p>
+                    <div class="course-details">
+                        <span>⏰ 3 oy</span>
+                        <span>👥 10-12 kishi</span>
+                    </div>
+                    <button class="btn btn-outline" onclick="showCourseModal('Boshlangich Daraja')">Batafsil</button>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">💬</div>
+                    <h3>O'rta Daraja</h3>
+                    <p>Muloqot qilish, matn tushunish, grammatik qoidalar</p>
+                    <div class="course-details">
+                        <span>⏰ 4 oy</span>
+                        <span>👥 8-10 kishi</span>
+                    </div>
+                    <button class="btn btn-outline" onclick="showCourseModal('Orta Daraja')">Batafsil</button>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">📖</div>
+                    <h3>Ilg'or Daraja</h3>
+                    <p>Murakkab matnlar, adabiy til, ilmiy ishlar</p>
+                    <div class="course-details">
+                        <span>⏰ 5 oy</span>
+                        <span>👥 6-8 kishi</span>
+                    </div>
+                    <button class="btn btn-outline" onclick="showCourseModal('Ilgor Daraja')">Batafsil</button>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">🎯</div>
+                    <h3>Maxsus Kurslar</h3>
+                    <p>Ishlash, o'qish, tibbiyot, biznes arab tili</p>
+                    <div class="course-details">
+                        <span>⏰ 6 oy</span>
+                        <span>👥 4-6 kishi</span>
+                    </div>
+                    <button class="btn btn-outline" onclick="showCourseModal('Maxsus Kurslar')">Batafsil</button>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">📜</div>
+                    <h3>Kotta guruh</h3>
+                    <p>kotta guruh qiyin sozlarni organamiz</p>
+                    <div class="course-details">
+                        <span>⏰ 4 oy</span>
+                        <span>👥 12-15 kishi</span>
+                    </div>
+                    <button class="btn btn-outline" onclick="showCourseModal('Quron Kursi')">Batafsil</button>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">🌍</div>
+                    <h3>Xalqaro Sertifikat</h3>
+                    <p>ALPT, CIMA tayyorlovi. Xalqaro darajadagi imtihonlar</p>
+                    <div class="course-details">
+                        <span>⏰ 6 oy</span>
+                        <span>👥 8-10 kishi</span>
+                    </div>
+                    <button class="btn btn-outline" onclick="showCourseModal('Xalqaro Sertifikat')">Batafsil</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teachers Section -->
+    <section id="teachers" class="teachers">
+        <div class="container">
+            <h2 class="section-title">Bizning Arab Tili O'qituvchilari</h2>
+            <div class="teachers-grid">
+                <div class="teacher-card">
+                    <div class="teacher-photo">
+                        <img src="img/rasm.jpg" alt="O'qituvchi">
+                    </div>
+                    <h3>Abdulloh Arabic</h3>
+                    <p class="teacher-subject">O’QITUVCHI📖 | MOTIVATOR🦾| TRENER🎤</p>
+                    <p class="teacher-exp">Arab davlatlarida yashab kelgan odam</p>
+                    <p class="teacher-desc">Sharqshunoslik Universiteti bitiruvchisi</p>
+                </div>
+
+
+                       
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="results">
+        <div class="container">
+            <h2 class="section-title">O'quvchilarimiz Natijalari</h2>
+            <div class="results-content">
+                <div class="result-item">
+                    <div class="result-number">95%</div>
+                    <div class="result-text">Kursni muvaffaqiyatli tamomlagan</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-number">150+</div>
+                    <div class="result-text">Xalqaro sertifikat olgan</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-number">89%</div>
+                    <div class="result-text">Arab tilida erkin muloqot qila oladi</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Aloqa</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Bog'lanish uchun</h3>
+                    <div class="contact-item">
+                        <span>📍</span>
+                        <p>Toshkent shahar, Yunusobod tumani, 12-uy</p>
+                    </div>
+                    <div class="contact-item">
+                        <span>📞</span>
+                        <p>+998 +998 97 777 49 12</p>
+                    </div>
+                    <div class="contact-item">
+                        <span>✉️</span>
+                        <p>abdulloharabic@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <span>🕒</span>
+                        <p>Shanba: 8:00 - 20:00<br>Yakshanba: 1:00 - 18:00</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Arab Tili Kursiga Yozilish</h3>
+                    <form id="contactForm">
+                        <input type="text" placeholder="Ismingiz" required>
+                        <input type="tel" placeholder="Telefon raqamingiz" required>
+                        <select required>
+                            <option value="">Kurs darajasini tanlang</option>
+                            <option value="boshlangich">Boshlang'ich Daraja</option>
+                            <option value="orta">O'rta Daraja</option>
+                            <option value="ilgor">Ilg'or Daraja</option>
+                            <option value="maxsus">Maxsus Kurslar</option>
+                            <option value="kotta guruh">kotta guruh</option>
+                            <option value="sertifikat">Xalqaro Sertifikat</option>
+                        </select>
+                        <textarea placeholder="Qo'shimcha ma'lumotlar" rows="4"></textarea>
+                        <button type="submit" class="btn btn-primary">Kursga yozilish</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3></h3>
+                    <p>Arab tili kurslari - Professional o'qitish. Sifat - bizning ustuvor yo'nalishimiz.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Tez havolalar</h4>
+                    <ul>
+                        <li><a href="#home">Bosh sahifa</a></li>
+                        <li><a href="#courses">Kurs darajalari</a></li>
+                        <li><a href="#teachers">O'qituvchilar</a></li>
+                        <li><a href="#contact">Kursga yozilish</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ijtimoiy tarmoqlar</h4>
+                    <div class="social-links">
+                        <a href="https://t.me/cefrabdulloh">Telegram</a>
+                        <a href="https://www.instagram.com/arabic.muallim?igsh=c2xlb3Exdjh2ZXN3&utm_source=qr">Instagram</a>
+                        <a href="https://www.youtube.com/@abdulloharabic">Youtube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2022 abdulloh arabic 3 yildan beri 150+ sertifikat berilgan </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="courseModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Arab Tili Kursiga Yozilish</h2>
+            <form id="courseForm">
+                <input type="text" placeholder="Ismingiz" required>
+                <input type="tel" placeholder="Telefon raqamingiz" required>
+                
+                <select id="courseSelect" required>
+                    <option value="">Kurs darajasini tanlang</option>
+                    <option value="boshlangich">Boshlang'ich Daraja</option>
+                    <option value="orta">O'rta Daraja</option>
+                    <option value="ilgor">Ilg'or Daraja</option>
+                    <option value="maxsus">Maxsus Kurslar</option>
+                    <option value="kotta kurs">kotta kurs</option>
+                    <option value="sertifikat">Xalqaro Sertifikat</option>
+                </select>
+                <button type="submit" class="btn btn-primary">Ariza yuborish</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
